@@ -1,0 +1,10 @@
+﻿@using AspNetMvcBlog.Data.Models
+@model List<Post>
+
+ @foreach(var item in Model){
+     <h1>
+         @item.Title
+
+     </h1>
+     <p> @item.Content </p>
+ }
